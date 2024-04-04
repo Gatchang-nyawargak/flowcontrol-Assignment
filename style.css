@@ -1,0 +1,127 @@
+.topnav{
+    display: flex;
+    justify-content:space-between;
+    font-size: larger;
+    
+    
+}
+.nav{
+    display: flex;
+    margin-right: 40%;
+    justify-content:space-evenly;
+    gap: 40px;
+    font-size: larger;
+
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+#pic1{
+    
+    border-radius: 30px;
+    width: 400px;
+}
+.con2{
+    display: flex;
+    justify-content: space-around;
+    font-size: larger;
+
+}
+.input{
+    width: 30px;
+}
+#blog{
+    justify-items: center;
+    border:  4px;
+    background-color: #e5efecfd;
+}
+.con3{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   justify-content: space-evenly;
+   font-size: larger;
+   
+}
+.con4{
+    display: flex;
+    
+    font-size: larger;
+}
+.con5{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: larger;
+    
+
+}
+#para{
+    
+    font-size: larger;
+}
+#orange{
+    color: orange;
+}
+button{
+    padding: 14px 14px;
+    background-color: rgb(107, 161, 216);
+    border-radius: 20px;
+    border: none;
+}
+.center{
+    margin-left: 150px;
+}
+.photo{
+    width: 200px;
+}
+.photos{
+    width: 200px;
+}
+.Doc{
+    display: flex;
+    justify-content: space-evenly;
+}
+.foot{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: larger;
+   
+}
+
+@media only screen and (max-width: 600px) {
+    .topnav, .nav, .container, .con2, .con3, .con4, .con5, .foot {
+        flex-direction: column;
+        font-size: small;
+    }
+    .nav, .con2, .con3, .con4, .con5 {
+        margin-right: auto;
+        flex-direction: column;
+        font-size: small;
+    }
+    .nav, .con2, .con3, .con4, .con5 {
+        gap: 20px;
+        flex-direction: column;
+        font-size: small;
+    }
+    #pic1, .photo {
+        width: 30px;
+        flex-direction: column;
+        font-size: small;
+    }
+    .photos{
+        width: 30px;
+    }
+    .input {
+        width: 30px;
+        flex-direction: column;
+    }
+    #blog {
+        margin-left: auto;
+        flex-direction: column;
+    }
+    .center {
+        margin-left: auto;
+        flex-direction: column;
+    }
+
+}
